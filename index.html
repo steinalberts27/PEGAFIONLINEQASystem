@@ -7,7 +7,7 @@
     <style>
         body {
             font-family: 'Arial', sans-serif;
-            background-color: #911212;
+            background-color: #fc0202;
             text-align: center;
             margin: 0;
             padding: 0;
@@ -215,6 +215,11 @@
     const gradeSection = document.getElementById('gradeSection').value;
     const strandInput = document.getElementById('strandInput').value;
     const browserInput = document.getElementById('browserInput').value;
+           if (!gradeSection || !strandInput || !browserInput) {
+                alert('Please fill out all the form fields before getting a Queuing Number.');
+                return;
+            }
+
 
     const queuingList = JSON.parse(localStorage.getItem('queuingList')) || [];
 
