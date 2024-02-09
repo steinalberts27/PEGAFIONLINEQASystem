@@ -213,9 +213,8 @@
     <script>
        function enqueueStudent() {
     const gradeSection = document.getElementById('gradeSection').value;
-    const strandInput = document.getElementById('strandInput').value;
     const browserInput = document.getElementById('browserInput').value;
-           if (!gradeSection || !strandInput || !browserInput) {
+           if (!gradeSection ||!browserInput) {
                 alert('Please fill out all the form fields before getting a Queuing Number.');
                 return;
             }
